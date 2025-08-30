@@ -22,26 +22,29 @@ Repo contents:
 ### Machine Model
 
 Machine model
-- all registers are 8 bits
-- there are 16 general purpose registers (i.e. R0 thru R15)
-- there are two special purpose registers (accumulator AC and program counter PC)
-- most instructions are 1 byte, some special instructions are 2 bytes
-- there are two I/O ports, one for input, one for output
-- there is no stack
-- there are no interrupts
+- Address bus is 8-bits
+- Data bus is 8-bits
+- RAM is split between instruction RAM and data RAM
+- Most instructions are 1 byte, some special instructions are 2 bytes
+- There are two I/O ports, one for input, one for output
+- There is no stack
+- There are no interrupts
 
 Memory model
 - Instruction RAM is 256 bytes
 - Data RAM is 256 bytes
 
-![model](https://github.com/dervish77/MiniCPU/blob/main/docs/MiniCPU-Machine-Model.png?raw=true)
-
-### Register Model 
-
 Register model
-- all registers are 8 bits
-- there are 16 general purpose registers (i.e. R0 thru R15)
-- there are two special purpose registers (accumulator AC and program counter PC)
+- All registers are 8 bits
+- There are 16 general purpose registers (i.e. R0 thru R15)
+  - These registers can be used directly as temp storage or as index registers into data RAM
+- There are two special purpose registers (accumulator AC and program counter PC)
+
+Addressing Modes
+- Direct operand (either data value or branch address)
+- Indirect via general purpose register (i.e. R0 thru R15)
+
+![model](https://github.com/dervish77/MiniCPU/blob/main/docs/MiniCPU-Machine-Model.png?raw=true)
 
 ### Instruction Model
 
@@ -137,7 +140,7 @@ ssss codes
 
 ### Examples
 
-#### Adds Numbers
+#### Add List of Numbers
 
 ```
 # add numbers 1 thru 5 send result to output
@@ -201,6 +204,7 @@ tbd
   * bindump - used to examine binary files
   * binedit - used to edit contents of binary file
   * bingen - used to generate binary files
+
 
 
 
