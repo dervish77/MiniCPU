@@ -1,7 +1,7 @@
 # MiniCPU
 Custom mini CPU design
 
-TBD
+The MiniCPU design was inspired in part by a couple of tiny CPU designs recently seen on the internet and also in part by an earlier design attempt known as the [MosCPU](https://github.com/dervish77/adgf/tree/master/dev/mos_cpu).  The goal was to keep the memory model deliberately very small and limit the number special purpose registers.  Another goal was to keep the instruction set down to around two dozen instructions or so.  It is not expected that this CPU design will be capable of handling all computational tasks but it will be interesting to see just what it can handle.
 
 Repo contents:
 
@@ -45,7 +45,7 @@ Register model
 
 ### Instruction Model
 
-MiniCPU instructions are either one byte or two bytes.  Two byte instructions use the second byte to specify an address in instruction RAM or a data value to be loaded as an immediate operand.  One byte instructions tbd.
+MiniCPU instructions are either one byte or two bytes.  One byte instructions either specify the entire opcode in the single byte or incorporate the register to be used as the lower nibble of the opcode.  Two byte instructions use the second byte to specify an address in instruction RAM or a data value to be loaded as an immediate operand.  
 
 ```
   OPERATION
@@ -201,6 +201,7 @@ tbd
   * bindump - used to examine binary files
   * binedit - used to edit contents of binary file
   * bingen - used to generate binary files
+
 
 
 
