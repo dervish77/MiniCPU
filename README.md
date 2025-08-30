@@ -35,6 +35,8 @@ tbd
 
 ### Architecture Diagram
 
+![architecture](https://github.com/dervish77/MiniCPU/blob/main/docs/MiniCPU-Architecture.png?raw=true)
+
 ### Instructions
 
 ```
@@ -88,4 +90,5 @@ tbd
   * bindump - used to examine binary files
   * binedit - used to edit contents of binary file
   * bingen - used to generate binary files
+
 
