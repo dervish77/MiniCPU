@@ -6,10 +6,10 @@ The MiniCPU design was inspired in part by a couple of tiny CPU designs recently
 Repo contents:
 
 * docs/          - system design docs, block diagrams, etc
-* examples/      - example code using the Stack CPU
+* examples/      - example code using the Mini CPU
 * hw/            - hardware design files
 * ref/           - reference documents for integrated packages
-* src/           - source code for the Stack CPU tools
+* src/           - source code for the Mini CPU tools
 
 
 ## Requirements
@@ -204,6 +204,7 @@ tbd
   * bindump - used to examine binary files
   * binedit - used to edit contents of binary file
   * bingen - used to generate binary files
+
 
 
 
