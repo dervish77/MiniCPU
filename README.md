@@ -47,6 +47,9 @@ Register model
 
 ```
  OPERATION
+ OPERATION aa        - where 'aa' is an 8-bit address in instruction RAM
+ OPERATION dd        - where 'dd' is an 8-bit data value in instruction RAM
+ OPERATION Rn        - where 'Rn' is one of the 16 general purpose registers
 ```
 
 ### Architecture Diagram
@@ -192,6 +195,7 @@ tbd
   * bindump - used to examine binary files
   * binedit - used to edit contents of binary file
   * bingen - used to generate binary files
+
 
 
 
