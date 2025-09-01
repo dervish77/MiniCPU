@@ -46,6 +46,10 @@ Addressing Modes
 
 ![model](https://github.com/dervish77/MiniCPU/blob/main/docs/MiniCPU-Machine-Model.png?raw=true)
 
+### Architecture Diagram
+
+![architecture](https://github.com/dervish77/MiniCPU/blob/main/docs/MiniCPU-Architecture.png?raw=true)
+
 ### Instruction Model
 
 MiniCPU instructions are either one byte or two bytes.  One byte instructions either specify the entire opcode in the single byte or incorporate the register to be used as the lower nibble of the opcode.  Two byte instructions use the second byte to specify an address in instruction RAM or a data value to be loaded as an immediate operand.  
@@ -56,10 +60,6 @@ MiniCPU instructions are either one byte or two bytes.  One byte instructions ei
   OPERATION dd        - where 'dd' is an 8-bit data value in instruction RAM
   OPERATION Rn        - where 'Rn' is one of the 16 general purpose registers
 ```
-
-### Architecture Diagram
-
-![architecture](https://github.com/dervish77/MiniCPU/blob/main/docs/MiniCPU-Architecture.png?raw=true)
 
 ### Instruction Set Architecture
 
@@ -168,16 +168,6 @@ ssss codes
 
 ## Detailed Design
 
-### Hardware
-
-#### Logic Blocks
-
-tbd
-
-#### Implementations
-
-tbd
-
 ### Software
 
 #### Simulator
@@ -188,6 +178,15 @@ tbd
 
 tbd
 
+### Hardware
+
+#### Logic Blocks
+
+tbd
+
+#### Implementations
+
+tbd
 
 ## Tools Used
 
@@ -204,6 +203,7 @@ tbd
   * bindump - used to examine binary files
   * binedit - used to edit contents of binary file
   * bingen - used to generate binary files
+
 
 
 
